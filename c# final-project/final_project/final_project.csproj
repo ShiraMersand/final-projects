@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{68F1C47B-05A4-4525-8C98-6F3C077D1AFF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>final_project</RootNamespace>
+    <AssemblyName>final_project</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BirthdayParty.cs" />
+    <Compile Include="Clock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Clock.Designer.cs">
+      <DependentUpon>Clock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Events.cs" />
+    <Compile Include="FbirthdayParty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FbirthdayParty.Designer.cs">
+      <DependentUpon>FbirthdayParty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fevents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fevents.Designer.cs">
+      <DependentUpon>Fevents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fsearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fsearch.Designer.cs">
+      <DependentUpon>Fsearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ftrip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ftrip.Designer.cs">
+      <DependentUpon>Ftrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fwedding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fwedding.Designer.cs">
+      <DependentUpon>Fwedding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DayOfMonth.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DayOfMonth.Designer.cs">
+      <DependentUpon>DayOfMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Trip.cs" />
+    <Compile Include="Wedding.cs" />
+    <EmbeddedResource Include="Clock.resx">
+      <DependentUpon>Clock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FbirthdayParty.resx">
+      <DependentUpon>FbirthdayParty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fevents.resx">
+      <DependentUpon>Fevents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fsearch.resx">
+      <DependentUpon>Fsearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ftrip.resx">
+      <DependentUpon>Ftrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fwedding.resx">
+      <DependentUpon>Fwedding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DayOfMonth.resx">
+      <DependentUpon>DayOfMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\טבעת יהלום.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\טבעת %2825%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\בלון.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tropical_beach [Converted].jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
