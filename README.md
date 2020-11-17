@@ -13,4 +13,6 @@ New volunteers can be added
 Each volunteer records the days he or she can volunteer
 For each day you can choose volunteers from the list of volunteers who are available to volunteer that day
 
-
+project in asp.net - website
+A sales site with a connection to the SQL database
+You can add products to the cart, delete products, and go to the purchase summary
